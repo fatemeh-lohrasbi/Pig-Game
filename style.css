@@ -12,6 +12,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   height: 100vh;
+  width: 100vw;
   color: #333;
   background-image: linear-gradient(to top left, #282329, #bf2e34);
   display: flex;
@@ -31,8 +32,9 @@ main {
 }
 .player{
     display: flex;
-    flex: 50%;
+    width: 50%;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     padding: 9rem;
     transition: all 0.75s;
@@ -41,4 +43,56 @@ main {
     -ms-transition: all 0.75s;
     -o-transition: all 0.75s;
 }
+.name {
+    position: relative;/*can delete this line*/
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
 
+
+  .score {
+    font-size: 8rem;
+    font-weight: 300;
+    color: #c7365f;
+    margin-bottom: auto;
+  }
+  .player--active {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  .player--active .name {
+    font-weight: 700;
+  }
+  .player--active .score {
+    font-weight: 400;
+  }
+  
+  .player--active .current {
+    opacity: 1;
+  }
+  .current {
+    background-color: #c7365f;
+    opacity: 0.8;
+    border-radius: 9px;
+    color: #fff;
+    width: 65%;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.75s;
+  }
+  .current-label {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    color: #ddd;
+  }
+  
+  .current-score {
+    font-size: 3.5rem;
+  }
+  
+
+  
