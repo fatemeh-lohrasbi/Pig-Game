@@ -43,7 +43,7 @@ main {
   -o-transition: all 0.75s;
 }
 .name {
-  position: relative; 
+  position: relative;
   font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 1px;
